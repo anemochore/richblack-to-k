@@ -1,6 +1,6 @@
 # Rich Black to K
 
-PDF 안의 **비트맵 이미지**를 검사해 검정/회색에 가까운 픽셀을 **K-only(먹 1도)**로 바꾸는 도구다.
+PDF 안의 **비트맵 이미지**를 검사해 검정/회색에 가까운 픽셀을 **K-only**(먹 1도)로 바꾸는 도구다.
 
 컬러 그림과 검정/회색 글씨가 하나의 비트맵에 함께 들어 있는 PDF를 염두에 두고 만들었다. 컬러 부분은 가능한 한 유지하면서, 검정/회색 글씨와 그 주변의 안티에일리어싱 픽셀을 K판으로 정리해 4도 인쇄에서 핀 어긋남으로 생길 수 있는 색 테두리를 줄이는 것이 목적이다.
 
@@ -541,3 +541,7 @@ python richblack_to_k.py input.pdf output.pdf --max-l 99
 ```powershell
 python richblack_to_k.py input.pdf output.pdf --edge-chroma-multiplier 1.3
 ```
+
+
+## todo
+- 클라이언트 JS로 포팅하기(기술적으로는 가능)
